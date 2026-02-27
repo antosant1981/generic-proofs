@@ -34,7 +34,7 @@ public class ValidationServiceImpl implements ValidationService {
 
         var validatorsSettings = validatorChainSettings.validators();
 
-        if (validatorsSettings.bindingGenerator().enabled()) {
+        if (validatorsSettings.binding().enabled()) {
             validators.add(new BindingValidator());
         }
 
