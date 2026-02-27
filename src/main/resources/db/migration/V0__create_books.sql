@@ -1,0 +1,4 @@
+CREATE TABLE book (
+    book_id BIGSERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL
+);

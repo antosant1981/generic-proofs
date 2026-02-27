@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: generic-proofs
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: admin
+    password: admin
+kafka:
+  bootstrap-servers: localhost:9092
+  consumer:
+    group-id: kafka_consumer_group_shop-manager
+    auto-offset-reset: earliest
+  producer:
+    outbox:
+      topic: generic-proofs
+
+validation:
+  chain:
+    validators:
+      signature:
+        enabled: true
+        default-settings:
+          policy-identifier: NATO
+          classification: unclassified
+      labels:
+        enabled: true
+        default-settings:
+          policy-identifier: NATO
+          classification: unclassified
+      binding:
+        enabled: true
+        default-settings:
+          policy-identifier: NATO
+          classification: unclassified

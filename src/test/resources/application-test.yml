@@ -1,0 +1,18 @@
+validation:
+  chain:
+    validators:
+      signature:
+        enabled: true
+        default-settings:
+          policy-identifier: NATO
+          classification: unclassified
+      labels:
+        enabled: true
+        default-settings:
+          policy-identifier: NATO
+          classification: unclassified
+      binding-generator:
+        enabled: true
+        default-settings:
+          policy-identifier: NATO
+          classification: unclassified
